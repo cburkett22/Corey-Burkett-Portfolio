@@ -64,6 +64,10 @@ height: 50vh;
 }
 
 /* About me & skills */
+article {
+  padding: 10px;
+}
+
 .intro-container {
   margin-right: 70px;
   margin-left: 70px;
