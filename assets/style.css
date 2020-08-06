@@ -78,7 +78,15 @@ article {
   font-style: italic;
 }
 
+/* Project Cards */
+.card-container {
+  margin: 100px;
+}
 
+/* Contact */
+.contact-container {
+  margin: 100px;
+}
 
 /* Footer */
 footer {
