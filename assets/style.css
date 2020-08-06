@@ -19,6 +19,13 @@ body {
   background-color: rgb(0, 30, 85) !important;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
 .nav-btn {
   font-family: Raleway !important;
   font-weight: 300 !important;
@@ -40,10 +47,11 @@ body {
 
 .jumbotron {
   position: relative;
-  top: -4px;
+  top: 64px;
   background: #143353 url(./images/background.JPG) center center no-repeat;
   background-size: cover;
-height: 50vh;
+  height: 50vh;
+  margin-bottom: 5rem;
 }
 
 .jumbotron .overlay {
