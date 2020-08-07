@@ -1,26 +1,27 @@
 $(document).ready(function(){
-    // card animation
+    // Card animation
     new WOW().init();
 
-    // about me button slow scroll
+    // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({
             scrollTop: $(".intro-container").offset().top
         }, 1000);
     });
-    // portfolio button slow scroll
+    // Portfolio button slow scroll
     $(".portfolio-btn").click(function() {
         $('html, body').animate({
             scrollTop: $(".card-container").offset().top
         }, 1000);
     });
-    //contact button slow scroll
+    // Contact button slow scroll
     $(".contact-btn").click(function() {
         $('html, body').animate({
             scrollTop: $(".contact-container").offset().top
         }, 1000);
     });
 
+    // Contact
     function validateForm() {
         const name =  $("#name").value;
         if (name == "") {
