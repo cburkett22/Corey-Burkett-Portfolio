@@ -96,6 +96,12 @@ article {
   margin: 100px;
 }
 
+.row-contact {
+  border-style: groove;
+  border-radius: 5px;
+  color: black;
+}
+
 /* Footer */
 footer {
   padding: 3px;
