@@ -23,6 +23,11 @@ $(document).ready(function(){
         window.open("https://cburkett22.github.io/06-Server-Side-APIs/");
     });
 
+    $("#card-five-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://jandrews16.github.io/virtual-cookbook/");
+    });
+
     // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({
