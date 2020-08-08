@@ -2,6 +2,27 @@ $(document).ready(function(){
     // Card animation
     new WOW().init();
 
+    // Portfolio card "Read More" buttons
+    $("#card-one-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://cburkett22.github.io/03-Password-Generator/");
+    });
+
+    $("#card-two-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://cburkett22.github.io/04-Code-Quiz/");
+    });
+
+    $("#card-three-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://cburkett22.github.io/05-Day-Planner/");
+    });
+
+    $("#card-four-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://cburkett22.github.io/06-Server-Side-APIs/");
+    });
+
     // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({
