@@ -28,6 +28,11 @@ $(document).ready(function(){
         window.open("https://jandrews16.github.io/virtual-cookbook/");
     });
 
+    $("#card-six-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://cburkett22.github.io/10-Team-Profile-Generator/");
+    });
+
     // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({
