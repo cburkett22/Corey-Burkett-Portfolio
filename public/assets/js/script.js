@@ -2,7 +2,7 @@ $(document).ready(function(){
     // Card animation
     new WOW().init();
 
-    // Portfolio card "Read More" buttons
+    // Projects card "Read More" buttons
     $("#card-one-btn").on("click", function(event){
         event.preventDefault();
         window.open("https://cburkett22.github.io/03-Password-Generator/");
@@ -39,8 +39,8 @@ $(document).ready(function(){
             scrollTop: $(".intro-container").offset().top
         }, 1000);
     });
-    // Portfolio button slow scroll
-    $(".portfolio-btn").click(function() {
+    // Projects button slow scroll
+    $(".projects-btn").click(function() {
         $('html, body').animate({
             scrollTop: $(".card-container").offset().top
         }, 1000);
