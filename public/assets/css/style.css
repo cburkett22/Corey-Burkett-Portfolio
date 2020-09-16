@@ -47,6 +47,7 @@ body {
 
 .jumbotron {
   position: relative;
+  text-align: center;
   top: 64px;
   background: #143353 url(../img/background.JPG) center center no-repeat;
   background-size: cover;
@@ -54,7 +55,7 @@ body {
   margin-bottom: 5rem;
 }
 
-.jumbotron .overlay {
+.title-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,11 +64,8 @@ body {
   background-color: rgba(20, 51, 83, 0.7);
 }
 
-.jumbotron .title-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  position: relative;
+.title-container {
+  display: inline-block;
   z-index: 1;
 }
 
@@ -84,6 +82,63 @@ article {
 .page-header {
   font-weight: 700;
   font-style: italic;
+  text-align: left;
+}
+
+.skills-card {
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+  display: inline-block;
+  margin: 18px;
+  font-size: 20px;
+}
+
+.html {
+  background-color: orange;
+}
+
+.css {
+  background-color: rgb(58, 127, 255);
+  color: white;
+}
+
+.bs {
+  background-color: rgb(158, 1, 158);
+  color: white;
+}
+
+.js {
+  background-color: yellow;
+}
+
+.jq {
+  background-color: rgb(1, 168, 168);
+  color: white;
+}
+
+.mysql {
+  background-color: orange;
+}
+
+.node {
+  background-color: rgb(25, 192, 25);
+}
+
+.express {
+  background-color: rgb(248, 235, 45);
+}
+
+.csharp {
+  background-color: rgb(158, 2, 158);
+  color: white;
+}
+
+.git {
+  background-color: red;
+  color: white;
 }
 
 /* Project Cards */
