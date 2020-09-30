@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 8080;
 
 // Environmental Variables
 require('dotenv').config();
+require('./config/prod')
 
 // View engine setup
 app.engine('handlebars', exphbs());
@@ -43,7 +44,7 @@ app.post('/send', (req, res) => {
       port: 465,
       auth: {
         user: 'coreyburkett22@gmail.com',
-        pass: process.env.GMAIL_PASS,
+        pass: GMAIL_PASS,
       },
       tls: {
         rejectUnauthorized: false
