@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 8080;
 
 // Environmental Variables
 require('dotenv').config();
-// require('./config/prod')
 
 // View engine setup
 app.engine('handlebars', exphbs());
@@ -24,6 +23,9 @@ app.use(express.static(path.join(__dirname, './public/assets')));
 app.get("/", (req, res) => {
   res.render('index');
 });
+
+//Heroku env var
+let gmailPassword = process.env.GMAIL_PASS;
 
 app.post('/send', (req, res) => {
   const output = `
@@ -44,7 +46,7 @@ app.post('/send', (req, res) => {
       port: 465,
       auth: {
         user: 'coreyburkett22@gmail.com',
-        pass: process.env.GMAIL_PASS,
+        pass: gmailPassword,
       },
       tls: {
         rejectUnauthorized: false
