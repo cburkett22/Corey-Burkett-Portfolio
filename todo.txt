@@ -1,4 +1,0 @@
-# Things to do:
-- Fix slow scroll
-- Update projects
-- Find out how to use a php server for the contact form

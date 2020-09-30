@@ -157,6 +157,26 @@ article {
   color: black;
 }
 
+.form-control {
+  color: black !important;
+}
+
+#submit-btn {
+  border-radius: 10px;
+  border-color: rgb(95, 151, 253);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 600;
+}
+
+#submit-btn:hover {
+  background-color: rgb(95, 151, 253);
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 /* Footer */
 footer {
   padding: 3px;

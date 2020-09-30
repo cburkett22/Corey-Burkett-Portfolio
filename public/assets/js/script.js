@@ -52,6 +52,6 @@ $(document).ready(function(){
         }, 1000);
     });
 
-    // Contact
+    // Node Mailer
     
 });
