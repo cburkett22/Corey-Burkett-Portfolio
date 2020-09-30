@@ -24,8 +24,8 @@ app.get("/", (req, res) => {
   res.render('index');
 });
 
-//Heroku env var
-let gmailPassword = process.env.GMAIL_PASS;
+//Heroku config var
+let gmailPassword = "'" + process.env.GMAIL_PASS + "'";
 
 app.post('/send', (req, res) => {
   const output = `
