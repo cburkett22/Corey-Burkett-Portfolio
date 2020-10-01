@@ -5,32 +5,17 @@ $(document).ready(function(){
     // Projects card "Read More" buttons
     $("#card-one-btn").on("click", function(event){
         event.preventDefault();
-        window.open("https://cburkett22.github.io/03-Password-Generator/");
+        window.open("https://pitchitadventures.herokuapp.com");
     });
 
     $("#card-two-btn").on("click", function(event){
         event.preventDefault();
-        window.open("https://cburkett22.github.io/04-Code-Quiz/");
+        window.open("https://yummy-burger-logger.herokuapp.com/");
     });
 
     $("#card-three-btn").on("click", function(event){
         event.preventDefault();
-        window.open("https://cburkett22.github.io/05-Day-Planner/");
-    });
-
-    $("#card-four-btn").on("click", function(event){
-        event.preventDefault();
-        window.open("https://cburkett22.github.io/06-Server-Side-APIs/");
-    });
-
-    $("#card-five-btn").on("click", function(event){
-        event.preventDefault();
-        window.open("https://jandrews16.github.io/virtual-cookbook/");
-    });
-
-    $("#card-six-btn").on("click", function(event){
-        event.preventDefault();
-        window.open("https://cburkett22.github.io/10-Team-Profile-Generator/");
+        window.open("https://github.com/cburkett22/12-Employee-Tracker");
     });
 
     // About me button slow scroll
