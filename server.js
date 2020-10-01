@@ -54,12 +54,11 @@ app.post('/send', (req, res) => {
       }
     });
 
-    // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"Portfolio Contact" <coreyburkett22@gmail.com>', // sender address
-      to: "coreyburkett22@gmail.com", // list of receivers
-      subject: "Portfolio Contact Request", // Subject line
-      html: output // html body
+      from: '"Portfolio Contact" <coreyburkett22@gmail.com>',
+      to: "coreyburkett22@gmail.com",
+      subject: "Portfolio Contact Request",
+      html: output
     });
 
     console.log("Message sent: %s", info.messageId);
