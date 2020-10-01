@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 //Heroku config var
-let gmailPassword = "'" + process.env.GMAIL_PASS + "'";
+let gmailPassword = process.env.GMAIL_PASS;
 
 app.post('/send', (req, res) => {
   const output = `
@@ -42,8 +42,9 @@ app.post('/send', (req, res) => {
 
   async function main() {
     let transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
       port: 465,
+      secure: true,
       auth: {
         user: 'coreyburkett22@gmail.com',
         pass: gmailPassword,
