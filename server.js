@@ -6,9 +6,6 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Environmental Variables
-require('dotenv').config();
-
 // View engine setup
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
