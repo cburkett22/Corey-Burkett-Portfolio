@@ -2,7 +2,7 @@ $(document).ready(function(){
     // Card animation
     new WOW().init();
 
-    // Projects card "Read More" buttons
+    // Projects card "View App" buttons
     $("#card-one-btn").on("click", function(event){
         event.preventDefault();
         window.open("https://pitchitadventures.herokuapp.com");
@@ -36,7 +36,4 @@ $(document).ready(function(){
             scrollTop: $(".contact-container").offset().top
         }, 1000);
     });
-
-    // Node Mailer
-    
 });
