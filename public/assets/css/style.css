@@ -96,47 +96,34 @@ article {
   font-size: 20px;
 }
 
-.html {
+.orange {
   background-color: orange;
 }
 
-.css {
+.blue {
   background-color: rgb(58, 127, 255);
   color: white;
 }
 
-.bs {
-  background-color: rgb(158, 1, 158);
-  color: white;
-}
-
-.js {
-  background-color: yellow;
-}
-
-.jq {
+.light-blue {
   background-color: rgb(1, 168, 168);
   color: white;
 }
 
-.mysql {
-  background-color: orange;
-}
-
-.node {
-  background-color: rgb(25, 192, 25);
-}
-
-.express {
-  background-color: rgb(248, 235, 45);
-}
-
-.csharp {
-  background-color: rgb(158, 2, 158);
+.purple {
+  background-color: rgb(158, 1, 158);
   color: white;
 }
 
-.git {
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: rgb(25, 192, 25);
+}
+
+.red {
   background-color: red;
   color: white;
 }
