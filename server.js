@@ -1,30 +1,34 @@
 const express = require("express");
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
-const path = require('path');
+const path = require("path");
+const compression = require("compression");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+// gzip compression
+app.use(compression());
+
 // View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Static folder
-app.use(express.static(path.join(__dirname, './public/assets')));
+app.use(express.static(path.join(__dirname, "./public/assets")));
 
 app.get("/", (req, res) => {
-  res.render('index');
+  res.render("index");
 });
 
 //Heroku config var
 let gmailPassword = process.env.GMAIL_PASS;
 
-app.post('/send', (req, res) => {
+app.post("/send", (req, res) => {
   const output = `
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
@@ -39,11 +43,11 @@ app.post('/send', (req, res) => {
 
   async function main() {
     let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: "smtp.gmail.com",
       port: 465,
       secure: true,
       auth: {
-        user: 'coreyburkett22@gmail.com',
+        user: "coreyburkett22@gmail.com",
         pass: gmailPassword,
       },
       tls: {
@@ -52,7 +56,7 @@ app.post('/send', (req, res) => {
     });
 
     let info = await transporter.sendMail({
-      from: '"Portfolio Contact" <coreyburkett22@gmail.com>',
+      from: "'Portfolio Contact' <coreyburkett22@gmail.com>",
       to: "coreyburkett22@gmail.com",
       subject: "Portfolio Contact Request",
       html: output
@@ -61,7 +65,7 @@ app.post('/send', (req, res) => {
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-    res.render('index', {msg: 'Email has been sent. Corey will get back to you soon!'});
+    res.render("index", {msg: "Email has been sent. Corey will get back to you soon!"});
   }
   main().catch(console.error);
 });
