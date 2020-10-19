@@ -47,7 +47,7 @@ app.post("/send", (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "coreyburkett22@gmail.com",
+        user: "portfolio.email2020@gmail.com",
         pass: gmailPassword,
       },
       tls: {
