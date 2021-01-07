@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     $("#card-three-btn").on("click", function(event){
         event.preventDefault();
-        window.open("https://github.com/cburkett22/12-Employee-Tracker");
+        window.open("https://instagram-clone-71013.web.app/");
     });
 
     // About me button slow scroll
