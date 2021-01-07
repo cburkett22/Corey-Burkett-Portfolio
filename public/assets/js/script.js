@@ -5,7 +5,7 @@ $(document).ready(function(){
     // Projects card "View App" buttons
     $("#card-one-btn").on("click", function(event){
         event.preventDefault();
-        window.open("https://pitchitadventures.herokuapp.com");
+        window.open("https://pitch-it-adventures.herokuapp.com/");
     });
 
     $("#card-two-btn").on("click", function(event){
