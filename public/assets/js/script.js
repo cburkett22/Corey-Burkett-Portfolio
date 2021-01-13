@@ -18,6 +18,11 @@ $(document).ready(function(){
         window.open("https://instagram-clone-71013.web.app/");
     });
 
+    $("#card-four-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://snapchat-clone-2021.web.app/");
+    });
+
     // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({

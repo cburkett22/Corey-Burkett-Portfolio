@@ -130,7 +130,20 @@ article {
 
 /* ==== Project Cards ==== */
 .card-container {
-  margin: 100px;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.card {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+
+.card > button {
+  justify-content: flex-start;
+  display: flex;
+  bottom: 0;
 }
 
 /* ==== Contact ==== */
