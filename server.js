@@ -65,7 +65,7 @@ app.post("/send", (req, res) => {
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-    res.render(alert("Email has been sent. I will get back to you soon!"));
+    res.render("index", {msg: "Email has been sent. I will get back to you soon!"});
   }
   main().catch(console.error);
 });
