@@ -23,6 +23,11 @@ $(document).ready(function(){
         window.open("https://snapchat-clone-2021.web.app/");
     });
 
+    $("#card-five-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://cburkett22.github.io/OMDb-Nominator/");
+    });
+
     // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({
