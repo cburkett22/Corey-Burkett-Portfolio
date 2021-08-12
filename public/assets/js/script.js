@@ -28,6 +28,11 @@ $(document).ready(function(){
         window.open("https://cburkett22.github.io/OMDb-Nominator/");
     });
 
+    $("#card-six-btn").on("click", function(event){
+        event.preventDefault();
+        window.open("https://tetris-in-react.herokuapp.com/");
+    });
+
     // About me button slow scroll
     $(".about-btn").click(function() {
         $('html, body').animate({
