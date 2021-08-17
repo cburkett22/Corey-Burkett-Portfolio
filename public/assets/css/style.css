@@ -175,7 +175,7 @@ article {
   color: black !important;
 }
 
-#submit-btn {
+#submit-btn, #resume-btn {
   border-radius: 10px;
   border-color: rgb(95, 151, 253);
   padding-top: 4px;
@@ -183,9 +183,10 @@ article {
   padding-left: 25px;
   padding-right: 25px;
   font-weight: 600;
+  text-decoration: none;
 }
 
-#submit-btn:hover {
+#submit-btn:hover, #resume-btn:hover {
   background-color: rgb(95, 151, 253);
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
