@@ -15,8 +15,22 @@ body {
 }
 
 /* ==== Navbar ==== */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .navbar {
-  background-color: rgb(0, 30, 85) !important;
+  background: linear-gradient(to bottom right, #3399ff 20%, #ff3300 100%) !important;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
 }
 
 .sticky {
@@ -61,7 +75,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(20, 51, 83, 0.7);
+  background-color: #3b3b3b9d;
 }
 
 .title-container {
